@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
+
+    font-family: "Gothic A1", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    
 }
+.languageButtons {
+    position: absolute;
+    left: 80%;
+    top: -40px;
+}
+.languageButtons button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 75px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
 .left {
     background-color: #A5AC9D;
     padding: 15px;
@@ -42,7 +58,10 @@ body {
     padding: 0;
 }
 .container {
+    position: relative;
     display: flex;
+    width: 100vw;
+    min-width: 800px;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -63,6 +82,7 @@ body {
     color: white;
     font-size: 32px;
     padding: 30px 20px;
+    letter-spacing: 1.5px;
 }
 .header img {
     width: 150px;
@@ -73,7 +93,7 @@ body {
 }
 .contact {
     font-size: 12px;
-    margin-top: 30px;
+    margin-top: 45px;
     color: white;
 }
 .adres {
@@ -135,18 +155,6 @@ body {
   transform: translateX(-50%);
   height: 17px; /* Adjust the height of the line */
   background-color: #000; /* Color of the line */
-}
-.pop1 {
-    /* left: 50%; */
-}
-.pop2 {
-    /* left: 70%; */
-}
-.pop3 {
-    /* left: 62%; */
-}
-.pop4 {
-    /* left: 50%; */
 }
 
 .education {

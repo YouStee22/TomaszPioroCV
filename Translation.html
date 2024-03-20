@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1 id="Hello"></h1>
+    <p id="How are you?"></p>
+
+    <script>
+        var translations = {
+            "Hello": {
+                "en": "Hello",
+                "pl": "Cześć",
+                "fr": "Bonjour" // Example: French translation
+            },
+            "How are you?": {
+                "en": "How are you?",
+                "pl": "Jak się masz?",
+                "fr": "Comment ça va ?" // Example: French translation
+            },
+            // Add more translations as needed
+        };
+
+        function switchLanguageFromURL() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var lang = urlParams.get('lang');
+            if (lang && translations[lang]) {
+                switchLanguage(lang);
+            } else {
+                switchLanguage('pl');
+            }
+        }
+
+        function switchLanguage(language) {
+            var keys = Object.keys(translations);
+            keys.forEach(function(key) {
+                var element = document.getElementById(key);
+                if (element) {
+                    element.textContent = translations[key][language];
+                }
+            });
+        }
+
+        switchLanguageFromURL();
+    </script>
+</body>
+</html>

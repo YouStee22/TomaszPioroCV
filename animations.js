@@ -85,15 +85,6 @@ divsInsideItemText.forEach(div => {
     });
 });
 
-const additionalSkills = document.querySelector('#additionalSkills');
-
-timeline1.fromTo(additionalSkills, {x: -40, opacity: 0 }, { x: 0, opacity: 1 }, "<30%");
-
-
-
-
-
-
 
 const firstLanguags = document.querySelectorAll('.abilities');
 firstLanguags.forEach(element => {
@@ -105,6 +96,12 @@ firstLanguags.forEach(element => {
     const linesV = element.querySelector('div:nth-child(2)');
     timeline1.fromTo(linesV, {x: -70, opacity: 0}, {x: 0, opacity: 1, duration: 0.25}, "<50%");
 });
+
+const additionalSkills = document.querySelector('#additionalSkills');
+
+timeline1.fromTo(additionalSkills, {x: -40, opacity: 0 }, { x: 0, opacity: 1 }, "<30%");
+
+
 
 
 
@@ -120,7 +117,7 @@ const pop3 = document.querySelector('.pop3');
 const pop4 = document.querySelector('.pop4');
 
 
-timeLine2.to(pop1, { duration: 1.5, x: 60, delay: 0 });
+timeLine2.to(pop1, { duration: 1.5, x: 60, delay: 0.2 });
 timeLine2.to(pop2, { duration: 1.5, x: 100, delay: 0 }, "-=1.5");
 timeLine2.to(pop3, { duration: 1.5, x: 80, delay: 0 }, "-=1.5");
 timeLine2.to(pop4, { duration: 1.5, x: 70, delay: 0 }, "-=1.5");
@@ -134,7 +131,7 @@ const timeLine3 = gsap.timeline();
 const daty = document.querySelectorAll('.experience');
 daty.forEach(element => {
     const firstDiv = element.querySelector('div:first-child');
-    timeLine3.fromTo(firstDiv, {x: -70, opacity: 0}, {x: 0, opacity: 1, duration: 0.40}, "<50%");
+    timeLine3.fromTo(firstDiv, {x: -70, opacity: 0}, {x: 0, opacity: 1, duration: 0.40}, "<30%");
 });
 daty.forEach(element => {
     const firstDiv = element.querySelector('div:nth-child(2)');
@@ -150,4 +147,4 @@ for (let i = 1; i < allDivs.length; i++) {
     timeLine3.fromTo(allDivs[i], {x: -70, opacity: 0}, {x: 0, opacity: 1, duration: 0.40}, "<50%");
 }
 
-timeline1.add(timeLine3);
+timeline1.add(timeLine3, "<50%");
