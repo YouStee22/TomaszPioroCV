@@ -7,13 +7,13 @@ var translations = {
         "en": "PERSONAL DETAILS",
         "pl": "DANE OSOBOWE"
     },
-    "dateOfBirth": {
-        "en": "Date of birth 18.09.2000",
-        "pl": "Data urodzenia 18.09.2000"
+    "date": {
+        "en": "Date of birth",
+        "pl": "Data urodzenia"
     },
     "adres": {
-        "en": "Address 1 Franciszka Bohomolca 11/85, Małopolska 31-416 Kraków",
-        "pl": "Adres 1 Franciszka Bohomolca 11/85, Małopolska 31-416 Kraków"
+        "en": "Address 1 F. Bohomolca 11/85, Małopolska 31-416 Kraków",
+        "pl": "Adres 1 F. Bohomolca 11/85, Małopolska 31-416 Kraków"
     },
     "languages": {
         "en": "LANGUAGES",
@@ -34,7 +34,7 @@ var translations = {
     },
     "skills": {
         "en": "SKILLS",
-        "pl": "UMIEJĘTNOSCI"
+        "pl": "UMIEJĘTNOŚCI"
     },
     "experience": {
         "en": "EXPERIENCE/ EDUCATION",
@@ -53,9 +53,13 @@ var translations = {
         "en": "Reliable",
         "pl": "Rzetelność"
     },
-    "communication": {
-        "en": "Communication",
-        "pl": "Umiejętność pracy w grupie"
+    "communication1": {
+        "en": "Communative",
+        "pl": "Umiejętność pracy"
+    },
+    "communication2": {
+        "en": "",
+        "pl": "w grupie"
     },
     "innovation": {
         "en": "Innovative",
@@ -68,7 +72,7 @@ var translations = {
     //EXPERIENCE
     "middleSchool": {
         "en": "Stanisław Staszic IT Technical School in Staszow",
-        "pl": "Nauka w technikum inforamtycznym im.Stanisława Staszica w Staszowie"
+        "pl": "Nauka w technikum inforamtycznym im. Stanisława Staszica w Staszowie"
     },
     "practice": {
         "en": "Erasmus Inthernship at FlyPhone in Spain",
@@ -78,9 +82,13 @@ var translations = {
         "en": "Połaniec Elporem Power Plant and Elpoautomatyka company z.o.o. Automation Technican",
         "pl": "Elektrownia Połaniec Eloprem i Elpoautomatyka company z.o.o Stanowisko automatyk"
     },
-    "current": {
-        "en": "Individual studing programming under the supervision of a mentor. Learning in progress.",
-        "pl": "Nauka programowania pod okiem mentora. W trakcie nauki"
+    "current1": {
+        "en": "Individual studing programming under the supervision of a mentor.",
+        "pl": "Nauka programowania pod okiem mentora."
+    },
+    "current2": {
+        "en": "Learning in progress.",
+        "pl": "W trakcie nauki"
     },
     //CERTIFICATES
     "cert1": {
@@ -93,7 +101,7 @@ var translations = {
     },
     "cert3": {
         "en": "Google Certificate - Basics of Internet Marketing.",
-        "pl": " Certykiat Google - Podstawy marketinku internetowego"
+        "pl": " Certykiat Google - Podstawy marketingu internetowego"
     },
     "cert4": {
         "en": "Freeformers Certificate - Development and Digital Competence Training.",

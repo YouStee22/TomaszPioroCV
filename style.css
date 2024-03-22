@@ -23,12 +23,14 @@ body {
 .left {
     background-color: #A5AC9D;
     padding: 15px;
-    width: 230px;
+    width: 270px;
 }
 .right {
     width: 800px;
     padding-bottom: 50px;
     background-color: #FDFAEF;
+    font-family:  "Gothic A1", sans-serif;
+    font-weight: 500;
 }
 .data {
     background-color: #FDFAEF;
@@ -46,9 +48,10 @@ body {
     display: flex;
     margin-left: 5px;
 }
-.data-left-data div  {
-    
+#communication span {
+    display: block;
 }
+
 .header-data-content {
     display: flex;
     
@@ -75,7 +78,9 @@ body {
     text-align: center;
     overflow: hidden;
     border-radius: 50%;
-
+    background-color: lightcyan;
+    width: 150px;
+    margin: auto;
 }
 .name-header {
     background-color: #424A52;
@@ -89,19 +94,19 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    transform: scale(1.4); 
+    transform: scale(1.6); 
 }
 .contact {
     font-size: 12px;
     margin-top: 45px;
     color: white;
 }
-.adres {
-
-}
 .contact-spec div {
     padding: 2.5px 0px;
     display: flex;
+}
+#dateOfBirth {
+    display: block;
 }
 .line {
     width: 130px; 
@@ -141,7 +146,7 @@ body {
     justify-content: space-between;
 }
 .abilities div:nth-child(2) {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .vertical-line2 {
@@ -163,6 +168,9 @@ body {
 .experience {
     display: flex;
     padding: 10px 0px;
+}
+.experience span {
+    display: block;
 }
 .experience div:first-child {
     width: 45%;
@@ -187,6 +195,7 @@ body {
 .items-text div {
     margin-left: 12px;
 }
+
 
 
 @media only screen and (max-width: 600px) {
